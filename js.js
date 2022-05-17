@@ -1,5 +1,5 @@
-let inicio = 
-document.querySelectorAll(".inicio");
+//arriba
+let inicio = document.querySelectorAll(".inicio");
 
 function mostrarScroll() {
 
@@ -15,7 +15,8 @@ function mostrarScroll() {
 
 window.addEventListener('scroll', mostrarScroll);
 
-let titulo = document.querySelectorAll(".titulo");
+//derecha
+let derecha = document.querySelectorAll(".derecha");
 
 function mostrarderecha() {
 
@@ -30,3 +31,20 @@ function mostrarderecha() {
     }
 }
 window.addEventListener('scroll', mostrarderecha);
+
+//izquierda
+let izquierda = document.querySelectorAll(".izquierda");
+
+function mostrarizquierda() {
+
+    let scrollTop = 
+    document.documentElement.scrollTop;
+    for(var i = 0 ; i < izquierda.length; i++ ) {
+        let alturaAnimado = izquierda[i].offsetTop;
+        if(alturaAnimado - 500 < scrollTop) {
+            izquierda[i].style.opacity = 1;
+            izquierda[i].classList.add("izq");
+        }
+    }
+}
+window.addEventListener('scroll', mostrarizquierda);
