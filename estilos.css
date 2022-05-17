@@ -82,7 +82,7 @@ h2:hover{
 }
 
 h3{
-	color: black;
+
 	margin-bottom: 30px;
 }
 
@@ -162,9 +162,18 @@ h3{
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border-radius: 10px;
-
-
 }
+
+.caja1 {
+	border: 1px;
+	background-color: rgba(172, 223, 250, 0.2);
+	padding: 10px; 
+	width: 800px; 
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
 .contentimg img{
 
 	width:850px;
@@ -193,13 +202,17 @@ h3{
 }
 
 .fontdef{
-	background: #00416A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-width: 100%;
+	color: white;
+	background-image: linear-gradient(180deg, #4f3f66 0, #3b2e5f 25%, #1f1f59 50%, #001253 75%, #00004e 100%);width: 100%;
 display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
+
+width: 100%;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+
 }
 .fontmet{
 	background-image: url(img/img2.png);
@@ -210,9 +223,11 @@ flex-wrap: wrap;
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
-
-
 }
+.contentimg:hover{
+	transform: scale(1.07);
+}
+
 
 .show {
 	animation: show 1.7s;
@@ -237,7 +252,6 @@ background-repeat: no-repeat;
 			transform: translateX(0);
 		}
 		}
-
 
 footer {
 	align-self: flex-end;
