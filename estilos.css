@@ -35,7 +35,13 @@ a{
 }
 li{
 	list-style: none;text-decoration: none;
+	text-align: left;
 }
+li::before { /* Añadimos contenido antes de cada elemento de la lista */
+	content: "\2022"; /* Insertamos el marcador */
+	padding-right: 20px; /* Establecemos el espacio entre las viñetas y el list item */
+	color: white; /* Coloreamos la viñeta */
+	}
 .contenedor-botones {
 	width: 100%;
 	display: grid;
@@ -87,6 +93,12 @@ h2:hover{
 h3{
 
 	margin-bottom: 30px;
+}
+h4{
+	text-align: left;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	margin-top: 40px;
 }
 
 .pre{
